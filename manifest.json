@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Table Sorter",
+    "version": "1.0.0",
+    "description": "This make all your table sortable",
+    "author": "Diwash Karki",
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Table Sorter"
+    },
+    "icons": {
+        "16": "icons/Icon-16.png",
+        "48": "icons/Icon-48.png",
+        "128": "icons/Icon-128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "storage"
+    ]
+}
